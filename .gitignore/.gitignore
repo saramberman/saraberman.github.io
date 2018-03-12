@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Style is Content</title>
+
+  <!-- This sets the initial view for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style type="text/css" media="screen">
+    html {
+      /* Make iOS not resize on device rotation */
+      -ms-text-size-adjust: 100%; 
+      -webkit-text-size-adjust: 100%;
+
+      /* NOTE
+      html is set to 62.5% so that all the REM measurements throughout Skeleton
+      are based on 10px sizing. So basically 1.5rem = 15px  
+      
+      Change this if you want to base your REM measuements on something other 
+      than 10px as the base
+      */
+      font-size: 62.5%; 
+    }
+
+    body {
+      font-size: 1.8em; /* currently ems cause chrome bug misinterpreting rems on body element */
+      line-height: 1.8;
+      font-weight: 300;
+      margin: 4;
+	  font-family: "georgia";
+    }
+
+    p {
+      margin-top: 1rem; }
+      
+    p.first {
+      margin-top:3;
+    }
+
+    h4 {
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      font-size: 2.4rem;
+      line-height: 1.35; 
+    }
+
+    h4.title {
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+      font-size: 8.0rem;
+      line-height: 1; 
+	  font-family: "georgia";
+    }
+
+    h4.author { 
+	  margin-top: 1rem;
+      margin-bottom: 4rem;
+      font-size: 4.0rem;
+      line-height: 1.35; 
+	  font-family: "georgia";
+      
+    }
+
+    .wrapper {
+      display:flex;
+    }
+
+    .column { }
+
+    /* Larger than mobile */
+    @media (min-width: 400px) {
+    	.column {
+    		width: 32rem;
+    	}
+		p{
+			font-size:1.2rem;
+			line-height:1.7rem;
+		}
+		h4.author {
+			font-size:1.3rem;
+		}
+    }
+
+
+    /* Larger than phablet (also point when grid becomes active) */
+    @media (min-width: 550px) {
+    	.column {
+    		width: 50rem;
+    	}
+		p{
+			font-size:1.3rem;
+			line-height:1.9rem;
+			text-align:left;
+		}
+		h4.author {
+			padding-top:5rem;
+		}
+			h4.author {
+				margin-bottom: 4rem;
+				}
+    		}
+   
+    /* Larger than tablet */
+    @media (min-width: 750px) {
+    	.column {
+    			width: 60rem;
+			  }
+			  h4.title {
+				  padding-top:6rem;
+				  font-size:3rem;
+			  }
+			  h4.author {
+			  	  font-size:2rem;
+			  }
+			  p {
+				font-size:1.5rem;
+				line-height:2.2rem;
+			  }
+		
+    	  }
+
+    /* Larger than desktop */
+    @media (min-width: 1000px) {
+    	.column {
+			width: 80rem;
+    	  }
+		  h4.title {
+			  padding-top:6rem;
+			  font-size:4rem;
+		  }
+		  h4.author {
+			  font-size:2rem;
+		  }
+		  p {
+			  font-size:2rem;
+			  line-height:3.1rem;
+		  }
+      }
+
+    /* Larger than Desktop HD */
+    @media (min-width: 1200px) {
+    	.column {
+			width: 100rem;
+    	  }
+		  h4.title {
+			  padding-top:6rem;
+			  font-size:5rem;
+		  }
+		  h4.author {
+			  font-size:2rem;
+		  }
+		  p {
+			  font-size:3rem;
+			  line-height:3.7rem;
+		  }
+      }
+    
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="column">
+        <h4 class="title">Style is Content</h4>
+        <h4 class="author">Max Bruinsma</h4>
+        <p class="first">All too often, visual expression is still considered by many, both designers and readers, to be merely a superficial matter, a stylistic gaze that should remain subordinated to the ‘substance’ of a message</p>
+        <p>In a visual world such as ours, text, words, letters, tend to turn into images. The brand name, the slogan, the pay-off, remain perfectly readable, but now on more than a verbal level. Words entwine themselves with imagery and iconographies; they become loaded with associations, contexts, "third meanings", the way images can evoke broad contexts, not necessarily linked in any direct way to their historical or "real" provenance. The three-letter word "God", for instance, has a different meaning when read verbally from when seen visually, as a brand.
+</p>
+		<p>What would be an appropriate typography for this brand name? More than ever, the answer to this question lies in the intention of the typographer, who chooses a typeface not just for its readability, but for its semantic field of visual correlations. ‘God’ as in ‘Coca Cola’, or ‘God’ as in IBM? Both these brand names, in turn, have become identical with their typographies, to the point where almost any word rendered in typical blue-striped type, or in flamboyant red script suggests the respective brands, and a world of associations connected with them.
+</p>
+		<p>Originally abstract signs, the letters of the alphabet track the contours of their meanings in less arbitrary, but more ambiguous ways. Their forms reflect not merely the history of typography, but the stylistic and semantic reality of a visual culture. Words are signs in a visual language of cultural traces.
+</p>
+		<p>Sometimes, these traces can disrupt the specificity of the sign, of a text – and sometimes they are the bolts that tightly fix it into an unmistakable realm of references beyond the text itself. When the meaning and internal structure of a text may not be compromised, typography functions at its most abstract level, that of making itself unseen. Here, the typographer is an editor of the text, more concerned with the structural clarity of its contents than with its formal expression beyond the meaning of the words – they have expressed themselves.
+</p>
+		<p>In other cases the typography adds another formal layer to the text. Then, the tone of voice regains a visual expression that may, or may not, coincide with the words it clothes, and the typographer becomes a director of the text. Style is content too. All too often, visual expression is still considered by many, both designers and readers, to be merely a superficial matter, a stylistic glaze that should remain subordinated to the substance" of a message. But, considering the emancipation of the visual in relationship to the verbal in our culture, this condescending attitude to visual expression negates the very real and valuable potentials of visual languages, including the language of signs we call the alphabet.
+</p>
+		<p>Is there any use in overturning the existing hierarchies between verbal and visual form – in showing that a language of, for instance, photographic fragments can be read both as verbal sentence and as a coherent narrative of images? Of course there is; not as a radical alternative to reading as we know it, but as an extension of the ways in which we can communicate. Typography, with its extended range of both structuring and expressing content, remains a craft central to the making of communication. The typographer’s characteristic scrutiny of the minutiae of formal expression cannot be ignored in a culture where crudeness is paramount. What we need, therefore, is a typography of images.
+</p>
+		
+		
+    </div>
+  </div>
+
+
+</body>
+</html>
