@@ -1,0 +1,1316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>slideDown demo</title>
+  <style>
+
+ .container{
+ 	background-color:white;
+ 	display:flex;
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
+ }
+ .item {
+ 	width:300px;
+ 	height: 300px;
+ 	background-color: white;
+ 	/*margin-top: 30px;
+ 	margin-left: 30px;*/
+ }
+.box{
+    background: #216583;
+    margin: 3px;
+    width: 60px;
+    height: 295px;
+display: none;
+ float: right;
+  }
+
+#id1{
+	background-color: #293462
+}
+
+#id2 {background-color: #216583;}
+#id2 .clicked{
+	width: 100%;
+
+}
+#id3 button {
+	width: 290px;
+	height:290px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	background-color: #fff1c1;
+	display: table;
+}
+
+#id3{
+	border-spacing: 5px;
+	position: relative;
+	display: table;
+	background-color: #f76262;
+}
+
+#id3 button.clicked{
+	background-color: pink;
+}
+#id4{
+    background-color: #fff1c1;
+    border-spacing: 5px;
+    position: relative;
+    display: table;
+}
+
+#id4 button {
+width: 290px;
+    height: 290px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #293462;
+  
+}
+#id4 button.clicked {
+  background-color:#216583;
+}
+#id6 {
+	background-color:#216583;
+	position: relative;
+	display: table;
+}
+#id7 {
+	background-color: #f76262;}
+.fadeout{
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #f76262;
+    height: 20px;
+    width: 200px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  display:block;
+  }
+.fade {
+	height: 260px;
+	width: 20px;
+	    border-radius: 50%;
+
+	position: relative;
+	margin: auto;
+display: block;
+background-color: #fff1c1;
+}
+ .slide{
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff1c1;
+    height: 20px;
+    width: 100px;
+    position: relative;
+    top: 10px;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  display:block;
+  }
+ #id8{
+
+    background-color: #fff;
+    border-spacing: 5px;
+    position: relative;
+    display: table;
+}
+
+#id8 button {
+  position:absolute;
+width: 200px;
+    height:100px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #293462;
+}
+
+#id8 button .clicked {
+  position:0;
+width: 100px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #fac2be;
+}
+
+#id8 {
+	background-color: #fff1c1;
+}
+
+#id10 {
+	background-color: #216583;
+}
+
+#id11 button{
+  width: 290px;
+    height: 290px;
+    
+    border-radius: 50%;
+    background-color: #fff1c1;
+  display:table;
+  box-sizing: border-box;
+}
+#id11 button.clicked{
+  width: 290px;
+    height: 290px;
+    box-sizing: border-box;
+    border-radius: 0%;
+    background-color: #fff1c1;
+  display:table;
+}
+#id11{
+/*     Margin: auto; 
+    background-color: green;
+border-spacing: 10px; 
+position: relative; 
+display: table;  */
+
+    background-color: #f76262;
+    border-spacing: 5px;
+    position: relative;
+  display: table;}
+
+#id9{
+/*     Margin: auto; 
+    background-color: green;
+border-spacing: 10px; 
+position: relative; 
+display: table;  */
+
+    background-color: #293462;
+    border-spacing: 5px;
+    position: relative;
+  display: table;}
+#id9 p {position: relative;
+margin-left: 15px;
+display: table;
+}
+
+  #draggable { 
+  	width: 100px; height: 100px; 
+  	border-radius: 50%;
+  	background-color: #216583;
+  	display: table; }
+
+  .toggler { width: 100px; height: 100px; position: relative; }
+   #id10 #button { padding: .5em 1em; text-decoration: none; }
+    #effect { width: 120px; height: 120px; /*padding: 0.2em;*/ position: relative; background: blue; }
+   .toggler { width: 200px; height: 200px; position: relative; }
+    #button { /*padding: .5em 1em;*/ text-decoration: none; }
+    #effect { width: 50px; height: 40px; /*padding: 0.4em; */position: relative; background-color: #fff1c1;  }
+    #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+
+
+#id12{    background-color: #fff1c1;
+    border-spacing: 5px;
+    position: relative;
+    display: table;
+}
+
+#id13{
+	background-color: #293462;
+	   border-spacing: 5px;
+    position: relative;
+    display: table;
+}
+
+#id14 {background-color: #216583;
+   border-spacing: 5px;
+    position: relative;
+    display: table;}
+
+#id15{
+
+	background-color: #f76262;
+	   border-spacing: 5px;
+    position: relative;
+    display: table;
+}
+#id16{    background-color: #fff1c1;
+	   border-spacing: 5px;
+    position: relative;
+    display: table;
+
+
+}
+#id17{
+	background-color: #293462;
+		   border-spacing: 5px;
+    position: relative;
+    display: table;
+}
+
+#id18 {background-color: #216583;}
+#id19{
+
+	background-color: #f76262;
+}
+#id20{    background-color: #fff1c1;}
+
+#id21{
+	background-color: #293462
+
+}
+#id22 {background-color: #216583;}
+#id23{
+	background-color: #f76262;
+}
+
+
+#id24{
+    background-color: #fff1c1;
+
+}
+
+#cool {
+  width: 290px;
+    height: 290px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #293462;}
+
+#bounce {
+     width: 290px;
+    height: 290px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #216583;
+  }
+  #highlight {
+     width: 290px;
+    height: 290px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #f76262;
+  }
+   #scale {
+     width: 290px;
+    height: 290px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #fff1c1;}
+
+
+       #shake {
+    width: 290px;
+    height: 290px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #293462;}
+
+    #explode {
+       width: 290px;
+    height: 290px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #216583;
+  }
+
+ .block {
+    position: relative;
+    background-color: #f76262;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 5px;
+    border-radius: 50%;
+  }
+.laquo{
+    position: absolute;
+    background-color: #fff1c1;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 50%;
+  }
+
+.easeOutBounce {
+	background-color: #3d9a44
+;
+border-radius: 50%;
+height: 100px;
+width: 100px;
+}
+.slideup {
+    background-color: #216583;
+    margin: 3px;
+    width: 50px;
+    height: 40px;
+    float: left;
+  }
+
+#id22 div {
+    margin: 3px;
+    width: 30px;
+    display: none;
+    height: 30px;
+    float: left;
+  }
+  #one {
+    background: #293462;
+  }
+  #two {
+    background: #f76262;
+  }
+  #three {
+    background: #fff1c1;
+  }
+
+
+    .togglers { width: 500px; height: 200px; position: relative; }
+  
+  #effect { position: relative; }
+  .newClass { width: 240px;  padding: 1em; letter-spacing: 0; margin: 0; }
+  .anotherNewClass { text-indent: 40px; letter-spacing: .2em; width: 410px; height: 100px; padding: 30px; margin: 10px; font-size: 1.1em; }
+
+    #clip {
+     width: 290px;
+    height: 290px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #216583;}
+
+ #id25{
+	background-color: #293462;
+	   border-spacing: 5px;
+    position: relative;
+    display: table;
+}
+
+#id26{background-color: #216583;
+
+}
+#id26:hover {
+    			transform:skew(10deg,10deg);
+    			cursor: pointer;
+			}
+			#id26:active {
+				background-color: #f76262;
+			}
+#id27 {
+
+    background-color: #f76262;
+}
+
+#id28{
+	    background-color: #fff1c1;
+
+}
+#littlebox {    
+	position: absolute;
+    width: 100px;
+    height: 290px;
+ /*   top: 1000px;*/
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #293462;
+
+}
+
+.book {
+transition: transform 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+background-color: blue;
+}
+
+#id29{
+	background-color: #293462
+}
+#id30 {background-color: #216583;}
+
+#id31{background-color: #f76262;}
+
+#id32{background-color: #fff1c1;
+    border-spacing: 5px;
+    position: relative;
+    display: table;
+}
+
+#bounce1{     width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #fff1c1;
+    	position: relative;
+	margin: auto;
+display: block;
+
+}
+#bounce2{     width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #fff1c1;
+    	position: relative;
+	margin: auto;
+display: block;
+
+}
+#bounce3{     width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #fff1c1;
+    	position: relative;
+	margin: auto;
+display: block;
+
+}
+#id33{	background-color: #293462
+;
+    
+    position: relative;
+    display: table;
+}
+.one {
+cursor: pointer;
+background: #ff0000;
+border-radius: 50%;
+height: 100px;
+width: 100px;
+left: 200px;
+position: relative;
+top:100px;
+bottom:0;
+left:0;
+right: 0;
+margin: auto;
+			}
+
+			#id34 {background-color: #216583;}
+#id35{
+	background-color: #f76262;
+}
+
+#id36{
+	border-spacing: 0px;
+	position: relative;
+	display: table;
+	background-color: #fff1c1;
+}
+
+.okay{border-radius: 50%;
+height: 150px;
+width: 150px;
+background: #293462;
+/*left:100px;*/
+}
+#id37{
+	background: #293462;
+}
+#feedback { font-size: 1.4em; }
+  #selectable .ui-selecting { background: #FECA40; }
+  #selectable .ui-selected { background: #F39814; color: white; }
+  #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+/*    .wow { width: 500px; height: 200px; position: relative; }
+  
+  #wowza { position: relative; }*/
+  .newerClass { width: 240px;  padding: 1em; letter-spacing: 0; margin: 0; }
+  .anotherNewerClass { text-indent: 40px; letter-spacing: .2em; width: 410px; height: 100px; padding: 30px; margin: 10px; font-size: 1.1em; }
+#id38 {background-color: #216583;}
+#id39{background-color: #f76262;}
+#id40{
+    background-color: #fff1c1;
+    border-spacing: 5px;
+    position: relative;
+    display: table;
+}
+
+.bouncingball {
+    width: 90px;
+    height: 90px;
+    background: #ccc;
+    border-radius: 50%;
+    background-color: #293462
+    /*border: 1px solid #000;*/
+  }
+#id41{
+    width: 300px;
+    height: 300px;
+    background-color: #293462;
+  }
+  #id42{
+    width: 300px;
+    height: 300px;
+    background-color: #216583;
+  }
+    #id43{
+    width: 300px;
+    height: 300px;
+    background-color: #f76262;
+  }
+      #id44{
+    width: 300px;
+    height: 300px;
+    background-color: #fff1c1;
+  }     
+   #id45{
+    width: 300px;
+    height: 300px;
+    background-color: #293462;
+  }
+      #id46{
+    width: 300px;
+    height: 300px;
+    background-color: #216583;
+  } 
+
+     #id47{
+    width: 300px;
+    height: 300px;
+    background-color: #f76262;
+  }
+
+        #id48{
+    width: 300px;
+    height: 300px;
+    background-color: #fff1c1;
+  } 
+
+          #id49{
+    width: 300px;
+    height: 300px;
+    background-color: #293462;
+  } 
+          #id50{
+    width: 300px;
+    height: 300px;
+    background-color: #216583;
+  } 
+
+  </style>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+    </head>
+
+
+<body>
+	<div class="container">
+		<div class="item" id="id1">
+	    	<button>
+	        Click me! 
+	    	</button>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+
+	      
+	      </div>
+	    <div class="item" id="id2">
+	    </div>
+	    <div class="item" id="id3"> 
+	        <button>
+	        </button>
+	    </div>
+	    <div class="item" id="id4">
+	    <button></button>
+	    </div>
+	    <div class="item" id="id5">
+	    </div>
+	    <div class="item" id="id6">
+	    	<div class="fadeout" id="fadeout1">
+	        </div>
+	      	<div class="fadeout" id="fadeout2">
+	        </div>
+	      	<div class="fadeout" id="fadeout3">
+	        </div>
+	        <div class="fadeout" id="fadeout4">
+	        </div>
+	        <div class="fadeout" id="fadeout5">
+	        </div>
+	        <div class="fadeout" id="fadeout6">
+	        </div>
+	        <div class="fadeout" id="fadeout7">
+	        </div>
+	        <div class="fadeout" id="fadeout8">
+	        </div>
+	        <div class="fadeout" id="fadeout9">
+	        </div>
+	         <div class="fadeout" id="fadeout10">
+	        </div>
+	         <div class="fadeout" id="fadeout11">
+	        </div>
+	         <div class="fadeout" id="fadeout12">
+	        </div>
+	         <div class="fadeout" id="fadeout13">
+	        </div>
+	         <div class="fadeout" id="fadeout14">
+	        </div>
+	        <div class="fadeout" id="fadeout15">
+	        </div>
+	   	</div>
+	    <div class="item" id="id7">
+	    	<button id="btn1">
+	        Fade out</button>
+	        <button id="btn2"> Fade in
+	        </button>
+	      	<div class="fade"></div>
+	      	
+	    </div>
+	    <div class="item" id="id8">
+	    	<button></button>
+	    </div>
+	    <div class="item" id="id9">
+	    	<div id="draggable" class="ui-widget-content"><p> drag me</p>
+	    </div>
+	</div>
+
+	    <div class="item" id="id10">
+	    	<div class="toggler">
+  <div id="effect" class="ui-widget-content ui-corner-all">
+    <h3 class="ui-widget-header ui-corner-all">HELLO</h3>
+ 
+  </div>
+
+	
+<button id="button" class="ui-state-default ui-corner-all">Click Me!
+</button>
+	</div>
+</div>
+<div class="item" id="id11">
+	<button></button>
+</div>
+<div class="item" id="id12">
+	<div id="cool"></div>
+</div>
+<div class="item" id="id13">
+	
+<div id="bounce"></div>
+</div>
+<div class="item" id="id14">
+	
+<div id="highlight"></div>
+</div>
+<div class="item" id="id15">
+	
+<div id="scale"></div>
+</div>
+<div class="item" id="id16">
+<div id="shake"></div>
+</div>
+<div class="item" id="id17">
+<div id="explode"></div>
+</div>
+
+<div class="item" id="id18">
+
+
+<p><button id="go">Run »</button></p>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+</div>
+
+<div class="item" id="id19">
+<!-- 	<button id="left">&laquo;</button>
+ --><button id="right">&raquo;</button>
+<div class="laquo"></div>
+</div>
+
+<div class="item" id="id20">
+
+
+</div>
+
+<div class="item" id="id21">
+
+<div class="slideup"></div>
+<div class="slideup"></div>
+<div class="slideup"></div>
+<div class="slideup"></div>
+
+
+</div>
+
+<div class="item" id="id22">
+
+<div id="one"></div>
+<div id="two"></div>
+<div id="three"></div>
+CLICK! CLICK! CLICK, CLICK, CLICK!
+
+</div>
+
+<div class="item" id="id23">
+	    	<div class="slide" id="slide1">
+	        </div>
+	      	<div class="slide" id="slide2">
+	        </div>
+	      	<div class="slide" id="slide3">
+	        </div>
+	        <div class="slide" id="slide4">
+	        </div>
+	        <div class="slide" id="slide5">
+	        </div>
+	        <div class="slide" id="slide6">
+	        </div>
+	        <div class="slide" id="slide7">
+	        </div>
+	        <div class="slide" id="slide8">
+	        </div>
+	        <div class="slide" id="slide9">
+	        </div>
+	        <div class="slide" id="slide10">
+	        </div>
+	        <div class="slide" id="slide11">
+	        </div>
+	        <div class="slide" id="slide12">
+	        </div>
+	        <div class="slide" id="slide13">
+	        </div>
+	        <div class="slide" id="slide14">
+	        </div>
+	   	</div>
+
+<div class="item" id="id24">
+	    <div class="togglers">
+  <div id="effect" class="newClass ui-corner-all">
+      HELLO THERE
+  </div>
+</div>
+ 
+	   	</div>
+
+	   	<div class="item" id="id25">
+	    <div id="clip">
+</div>
+ 
+	   	</div>
+
+	   	<div class="item" id="id26">
+	   		
+	   	</div>
+
+	   	<div class="item" id="id27">
+	   		
+	   	</div>
+	<div class="item" id="id28">
+	   		<div id="littlebox">
+	   	</div>
+	   </div>
+<div class="item" id="id29">
+</div>
+
+<div class="item" id="id30">
+</div>
+<div class="item" id="id31">
+</div>
+<div class="item" id="id32">
+	<h1>Click on me and I will be gone</h1>
+		<h2>Goodbye</h2>
+</div>
+	<div class="item" id="id33"><div id ="animation"><div id="bounce1"></div><div id="bounce2"></div><div id="bounce3"></div><div id="bounce4"></div><div id="bounce4"></div><div id="bounce5"></div>
+	</div></div>
+
+<div class="item" id="id34">
+</div>
+<div class="item" id="id35">
+</div>
+
+<div class="item" id="id36">
+	<div class="okay"></div>
+	<div class="okay"></div>
+</div>
+
+
+	 <div class="item" id="id37">
+<ol id="selectable">
+  <li class="ui-widget-content"></li>
+  <li class="ui-widget-content"></li>
+  <li class="ui-widget-content"></li>
+  <li class="ui-widget-content"></li>
+  <li class="ui-widget-content"></li>
+  <li class="ui-widget-content"></li>
+  <li class="ui-widget-content"></li>
+</ol></div> 
+
+	 <div class="item" id="id38">
+<p>Date: <input type="text" id="datepicker"></p>
+</div> 
+
+<div class="item" id="id39">
+	    <div class="wow">
+  <div id="wowza" class="anotherNewerClass ui-corner-all">
+      HELLO THERE
+  </div>
+</div>
+ 
+	   	</div>   
+<div class="item" id="id40">
+<div class="bouncingball"></div>
+<div class="bouncingball"></div>
+<div class="bouncingball"></div>
+</div>
+
+<div class="item" id="id41"><p>This box gets rid of the first box</p>
+</div>
+<div class="item" id="id42"><p>This box makes all the boxes smaller</p>
+</div>
+<div class="item" id="id43"><p>This box makes all the boxes go back to normal</p>
+</div>
+<div class="item" id="id44"><p>This box gets rid of the second box</p>
+</div>
+<div class="item" id="id45"><p>This box gets rid of the third box</p>
+
+</div>
+<div class="item" id="id46"><p>This box makes everything EVEN smaller</p>
+</div>
+<div class="item" id="id47">
+
+</div>
+<div class="item" id="id48">
+</div>
+<div class="item" id="id49"><p>This box makes everything go back to normal again :)</p>
+</div>
+<div class="item" id="id50"><p>This box makes everything disappear</p>
+</div>
+</div>        
+     
+
+ 
+<script>
+$( "#id1 button" ).click(function () {
+  if ( $( ".box" ).first().is( ":hidden" ) ) {
+    $( ".box" ).slideDown( "slow" );
+  } else {
+    $( ".box" ).hide();
+  }
+});
+
+$( "#id2" ).click('click touchstart', function(){
+$(this).height("300px").width("50%");
+$(this).click(function(){
+$(this).height("300px").width("300px");
+});
+});
+
+$("#id3 button").click('click touchstart',function (){
+$("#id3 button").fadeOut("slow", function(){
+});
+});
+
+$("#id4 button").click('click touchstart', function(){
+$("#id4 button").animate({opacity:1}, 100);
+});
+
+$("#id4 button").click('click', function(){
+$("#id4 button").toggleClass('clicked');
+});
+
+$('#id5').on ('click', function() {
+	alert ('you have clicked');
+    $(this).css('background-color','#293462');
+});
+
+    $( "#fadeout1" ).click(function() {
+  $( "#fadeout1" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+  
+  $( "#fadeout2" ).click(function() {
+  $( "#fadeout2" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+  $( "#fadeout3" ).click(function() {
+  $( "#fadeout3" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+      $( "#fadeout4" ).click(function() {
+  $( "#fadeout4" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+  
+  $( "#fadeout5" ).click(function() {
+  $( "#fadeout5" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+  $( "#fadeout6" ).click(function() {
+  $( "#fadeout6" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+      $( "#fadeout7" ).click(function() {
+  $( "#fadeout7" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+  
+  $( "#fadeout8" ).click(function() {
+  $( "#fadeout8" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+      $( "#fadeout9" ).click(function() {
+  $( "#fadeout9" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+        $( "#fadeout10" ).click(function() {
+  $( "#fadeout10" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+  $( "#fadeout11" ).click(function() {
+  $( "#fadeout11" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+      $( "#fadeout12" ).click(function() {
+  $( "#fadeout12" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+  
+  $( "#fadeout13" ).click(function() {
+  $( "#fadeout13" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+      $( "#fadeout14" ).click(function() {
+  $( "#fadeout14" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+      $( "#fadeout15" ).click(function() {
+  $( "#fadeout15" ).fadeOut( "slow", function() {opacity:1
+  });
+});
+  $("#btn1").click(function(){
+    $(".fade").fadeOut(1000);
+  });
+   $("#btn2").click(function(){
+    $(".fade").fadeIn(1000);
+  });
+ $('#id8 button').click('click function', function() {
+	$( '#id8 button').animate({ 
+    top:"200px",
+    left:"100px"
+  }, 1000);
+  });
+
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+
+  $( function() {
+    var state = true;
+    $( "#button" ).on( "click", function() {
+      if ( state ) {
+        $( "#effect" ).animate({
+          backgroundColor: "#aa0000",
+          color: "#fff",
+          width: 300
+        }, 1000 );
+      } else {
+        $( "#effect" ).animate({
+          backgroundColor: "#fff",
+          color: "#000",
+          width: 0
+        }, 1000 );
+      }
+      state = !state;
+    });
+  } );
+
+$("#id11 button").click('click touchstart', function() {
+$( "#id11 button" ) .toggleClass('clicked');
+});
+$( "#id12").click(function() {
+  $( "#cool" ).toggle( "puff" );
+});
+
+$("#id13").click(function() {
+  $( "#bounce" ).toggle( "bounce", { times: 3 }, "slow" );
+});
+
+$( "#id14" ).click(function() {
+  $( "#highlight" ).toggle( "highlight" );
+});
+
+$( "#id15" ).click(function() {
+  $( "#scale" ).toggle( "scale" );
+});
+$( "#id16" ).click(function() {
+  $( "#shake" ).toggle( "shake" );
+});
+
+$( "#id17").click(function() {
+  $( "#explode" ).toggle( "explode" );
+});
+
+$( "#go" ).click(function() {
+  $( ".block" ).first().animate({
+    left: 90
+  }, {
+    duration: 1000,
+    step: function( now, fx ){
+      $( ".block" ).slice( 1 ).css( "left", now );
+    }
+  });
+});
+
+
+$( "#right" ).click(function() {
+  $( ".laquo" ).animate({ "left": "+=100px" }, "fast" );
+});
+ 
+// $( "#left" ).click(function(){
+//   $( ".laquo" ).animate({ "left": "+=100px" }, "fast" );
+// });
+
+$("#id20").click(function(){
+	$( ".easeOutBounce" ).animate({ "top" : "+=100"}, 'easeOutBounce');
+});
+
+$('#id20').click(function() {
+		$(this).animate({opacity: "0"}, 600);
+		
+    });
+
+
+$("#id21" ).click(function() {
+  if ( $( ".slideup" ).first().is( ":hidden" ) ) {
+    $( ".slideup" ).show( "slow" );
+  } else {
+    $( ".slideup" ).slideUp();
+  }
+});
+
+$( "#id22").click(function() {
+  $( "div:hidden" ).first().fadeIn( "fast" );
+});
+
+
+
+    $( "#slide1" ).click(function() {
+  $( "#slide1" ).toggle( "slide"); 
+  });
+
+    $( "#slide2" ).click(function() {
+  $( "#slide2" ).toggle( "slide"); 
+  });
+  
+  $( "#slide3" ).click(function() {
+  $( "#slide3" ).toggle( "slide"); 
+  });
+  $( "#slide4" ).click(function() {
+  $( "#slide4" ).toggle( "slide"); 
+  });
+
+    $( "#slide5" ).click(function() {
+  $( "#slide5" ).toggle( "slide"); 
+  });
+   $( "#slide6" ).click(function() {
+  $( "#slide6" ).toggle( "slide"); 
+  });
+
+    $( "#slide7" ).click(function() {
+  $( "#slide7" ).toggle( "slide"); 
+  });
+
+       $( "#slide8" ).click(function() {
+  $( "#slide8" ).toggle( "slide"); 
+  });
+
+              $( "#slide9" ).click(function() {
+  $( "#slide9" ).toggle( "slide"); 
+  });
+
+               $( "#slide10" ).click(function() {
+  $( "#slide10" ).toggle( "slide"); 
+  });
+$( "#slide11" ).click(function() {
+  $( "#slide11" ).toggle( "slide"); 
+  });
+$( "#slide12" ).click(function() {
+  $( "#slide12" ).toggle( "slide"); 
+  });
+$( "#slide13" ).click(function() {
+  $( "#slide13" ).toggle( "slide"); 
+  });
+$( "#slide14" ).click(function() {
+  $( "#slide14" ).toggle( "slide"); 
+  });
+  $( function() {
+    $( "#id24" ).on( "click", function() {
+      $( ".newClass" ).switchClass( "newClass", "anotherNewClass", 1000 );
+      $( ".anotherNewClass" ).switchClass( "anotherNewClass", "newClass", 1000 );
+    });
+  } );
+
+
+  $("#id25").click(function() {
+  $( "#clip" ).toggle( "clip" );
+});
+
+
+
+
+	$('#id27').click('click touchstart', function() {
+		$(this).animate({height: '20px', width: '20px'}, 200);
+		$(this).animate({height: '300px', width: '23%'}, 200);
+		$(this).animate({height: '20px', width: '20px'}, 200);
+		$(this).animate({height: '300px', width: '23%'}, 200);
+		$(this).animate({height: '20px', width: '20px'}, 200);
+		$(this).animate({height: '300px', width: '23%'}, 200);
+		$(this).animate({height: '20px', width: '20px'}, 200);
+		$(this).animate({height: '300px', width: '300px'}, 200);
+
+	});
+
+
+		$('#littlebox').click('click touchstart', function() {
+		$(this).animate({left: '203'}, 800);
+		$(this).animate({opacity: '0'}, 1000);
+
+	});
+
+
+			$('#id29').click('click touchstart', function() {
+		$(this).animate({width: '600px'}, 900);
+		$(this).animate({width: '300px'}, 900);
+		$(this).animate({opacity: '1'}, 1800);
+
+	});
+
+
+				$('#id30').click('click touchstart', function() {
+		$(this).animate({height: '20px'}, 600);
+		$(this).animate({height: '300'}, 800);
+
+	});
+
+$( "#id31" ).click(function() {
+  $( "#id31" ).toggle( "fold" );
+});
+
+
+	  $("h1").click(function(){
+        $("h1").slideUp();
+    });
+	  $("#id32").click(function(){
+        $("h1").slideUp();
+    });
+
+
+	  			$('#bounce1').hover(function () {
+  		$(this).animate({
+    		height: "100px"
+  }, 500);
+});
+
+
+
+$('#bounce2').hover(function () {
+  		$(this).animate({
+    		height: "100px"
+  }, 500);
+});
+
+$('#bounce3').hover(function () {
+  		$(this).animate({
+    		height: "100px"
+  }, 500);
+});
+$( ".one" ).click(function() {
+    $('.one').jqFloat({
+        width: 1200,
+        height: 900,
+        speed: 200
+    });
+   });
+
+$( "#id34" ).click(function() {
+  $( "#id34" ).toggle( "scale" );
+});
+$('#id35').click(function() {
+		if(id35==true){
+			$("#id35").css("border-radius","50%");
+			id35= false;
+		}
+		else {
+			$("#id35").css("border-radius","0%");
+			id35= true;
+		}
+    });
+
+$(".okay").click(function() {
+  $( ".okay" ).toggle( "slide");
+});
+
+  $( function() {
+    $( "#selectable" ).selectable();
+  } );
+
+    $( function() {
+    $( "#id39" ).on( "click", function() {
+      $( ".newerClass" ).switchClass( "newerClass", "anotherNewerClass", 1000 );
+      $( ".anotherNewerClass" ).switchClass( "anotherNewerClass", "newerClass", 1000 );
+    });
+  } );
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+$("#id40").click(function() {
+  $( ".bouncingball" ).effect( "bounce", "slow" );
+});
+
+$( "#id41" ).click('click touchstart', function() {
+  $("#id1").hide( "drop",{ direction: "down" }, "slow" );
+});
+
+
+$( "#id42" ).click('click touchstart', function() {
+  $(".item").animate( {height:"100px",
+width:
+"100px"});
+});
+$( "#id43" ).click('click touchstart', function() {
+  $(".item").animate( {height:"300px",
+width:
+"300px"});
+});
+
+$( "#id44" ).click('click touchstart', function() {
+  $("#id2").hide( "drop",{ direction: "down" }, "slow" );
+});
+
+
+$( "#id45" ).click('click touchstart', function() {
+  $("#id3").hide( "drop",{ direction: "down" }, "slow" );
+});
+
+$( "#id46" ).click('click touchstart', function() {
+  $(".item").animate( {height:"50px",
+width:
+"50px"});
+});
+
+$( "#id47").click(function() {
+  $( "#id47" ).toggle( "explode" );
+});
+
+$("#id48").click(function() {
+  $( "#id48" ).toggle( "bounce", { times: 3 }, "slow" );
+});
+
+$( "#id49" ).click('click touchstart', function() {
+  $(".item").animate( {height:"300px",
+width:
+"300px"});
+});
+
+$( "#id50" ).click('click touchstart', function() {
+  $(".item").hide( "drop",{ direction: "down" }, "slow" );
+});
+  
+</script>
+ 
+</body>
+</html>
