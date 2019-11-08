@@ -1,0 +1,49 @@
+.skrollr-container{
+width: 100%;
+	height:500px;
+	background-color: rgb(212,165,217);
+	overflow:hidden;
+	  display: flex;
+flex-direction: column;
+flex-wrap:wrap;
+
+}
+
+
+
+
+
+.hotdog{
+	
+	background-color: rgb(57, 39, 59);
+	position: absolute;
+
+}
+
+img{
+	
+	position: absolute;
+
+
+}
+
+.title{font-family: 'Monoton', cursive;
+color: rgb(255, 0, 0);
+text-align: center;
+font-size: 90px; }
+
+.box {	height:100%;
+	width:100%;	
+	background-color: rgb(255, 252, 201);
+
+}
+
+
+.enjoy{font-family: 'Monoton', cursive;
+color: rgb(255, 0, 0);
+text-align: center;
+font-size: 90px; 
+bottom:300px;}
+
+#hidden {overflow: hidden;
+position: relative;}
