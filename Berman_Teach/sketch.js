@@ -51,7 +51,7 @@ function draw() {
   background(0);
 
   // Draw the video
-  image(video,"","", "","");
+  image(video, 0, 0);
   // STEP 4: Draw the label
   // textSize(16);
   // textAlign(CENTER, CENTER);
