@@ -28,7 +28,7 @@ const flip = true
 
 function setup() {
   color(100);
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1000, 600);
   // Create the video
   video = createCapture(VIDEO);
   video.hide();
@@ -36,7 +36,7 @@ function setup() {
     button = createButton('next question')
   // STEP 2: Start classifying
   classifyVideo();
-  video.size(1000, 1000);
+  video.size(windowWidth, WindowHeight);
 }
 
 // STEP 2 classify the videeo!
