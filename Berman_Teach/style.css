@@ -1,3 +1,41 @@
+.intro {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 100px;
+    text-align: center;
+  color: #ff0000;
+  margin-bottom: 0px;
+}
+
+.subhead {
+    font-family: 'Nanum Pen Script', cursive;
+  font-size: 40px;
+    text-align: center;
+  color: #fc8c03;
+    margin-top: 0px;
+
+}
+
+button {background-color: white;
+font-size: 40px;
+border: 2px solid #ff0000;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 4px;
+      font-family: 'Nanum Pen Script', cursive;
+color: #fc8c03;
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 45%;
+}
+
+.volume {
+  float: left;
+  margin-top: -80px;
+  font-size: 50px;
+  margin-left: 10px;
+  
+}
+
 html, body {
   margin: 0;
   padding: 0;
