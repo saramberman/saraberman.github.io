@@ -36,7 +36,7 @@ function setup() {
     button = createButton('next question')
   // STEP 2: Start classifying
   classifyVideo();
-  video.size(windowWidth, WindowHeight);
+  video.size(windowWidth, windowHeight);
 }
 
 // STEP 2 classify the videeo!
