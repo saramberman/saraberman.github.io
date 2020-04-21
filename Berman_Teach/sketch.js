@@ -48,7 +48,7 @@ function classifyVideo() {
 
 
 function draw() {
-  background(0);
+  background(100);
 
   // Draw the video
   image(video, 0, 0);
