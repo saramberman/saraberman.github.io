@@ -30,14 +30,14 @@ function setup() {
   color(white);
 //   createCanvas(1000, 600);
   // Create the video
-    createCanvas(900, 750);
+    createCanvas(640, 480);
   video = createCapture(VIDEO);
   video.hide();
   frameRate(fr);
     button = createButton('next question')
   // STEP 2: Start classifying
   classifyVideo();
-//   video.size(windowWidth, windowHeight);
+video.size(640, 480);
 }
 
 // STEP 2 classify the videeo!
