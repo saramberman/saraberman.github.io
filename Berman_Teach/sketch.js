@@ -27,7 +27,7 @@ function preload() {
 const flip = true
 
 function setup() {
-  color(white);
+  color(100);
 //   createCanvas(1000, 600);
   // Create the video
     createCanvas(640, 480);
