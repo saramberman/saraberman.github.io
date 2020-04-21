@@ -65,7 +65,7 @@ function draw() {
     image(A, 130, 20, 350, 500)
     // image(alligator, 330, 200, 370, 220)
     fr = -10;
-
+  }
   
   
 
