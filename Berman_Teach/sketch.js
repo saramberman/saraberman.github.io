@@ -8,8 +8,7 @@ let video;
 // For displaying the label
 let label = " ";
 let answer = " ";
-let button = ""; 
-let playing = false
+let playing = false;
 let A = "";
 let fr = -10;
 // The classifier
@@ -66,11 +65,7 @@ function draw() {
     image(A, 130, 20, 350, 500)
     // image(alligator, 330, 200, 370, 220)
     fr = -10;
-    button.show();
-    button.mousePressed(changeB);
-} 
-else if (label == "nothing") button.hide();
-  {}
+
   
   
 
