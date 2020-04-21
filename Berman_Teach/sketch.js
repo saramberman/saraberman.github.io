@@ -34,7 +34,6 @@ function setup() {
   video = createCapture(VIDEO);
   video.hide();
   frameRate(fr);
-    button = createButton('next question')
   // STEP 2: Start classifying
   classifyVideo();
 video.size(640, 480);
