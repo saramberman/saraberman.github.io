@@ -30,7 +30,7 @@ function setup() {
   color(100);
 //   createCanvas(1000, 600);
   // Create the video
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(900px, 750px);
   video = createCapture(VIDEO);
   video.hide();
   frameRate(fr);
