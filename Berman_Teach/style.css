@@ -71,11 +71,11 @@ canvas {
 }
 .question {
       font-family: 'Nanum Pen Script', cursive;
-  font-size: 40px;
+  font-size: 60px;
     text-align: left;
   color: #fc8c03;
     margin-top: 0px;
-  margin-left: 10px;
+  margin-left: 20px;
 
 }
 
