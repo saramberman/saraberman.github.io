@@ -82,4 +82,9 @@ canvas {
 .emoji {
   font-size: 100px;
   text-align: right;
-  
+ 
+.column {
+float: left;
+  width: 50%;
+  padding: 10px;
+  }
