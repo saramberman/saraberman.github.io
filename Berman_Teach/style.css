@@ -67,6 +67,7 @@ html, body {
 }
 canvas {
   display: block;
+  margin-left: 20px;
 }
 .question {
       font-family: 'Nanum Pen Script', cursive;
